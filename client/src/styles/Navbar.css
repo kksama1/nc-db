@@ -1,0 +1,94 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1.05em;
+}
+
+#root {
+    display: flex;
+    justify-content: space-between;
+}
+
+.App {
+ /* width: all; */
+}
+
+
+a {
+    color: white;
+    text-decoration: none;
+    
+}
+
+
+
+.header {
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 100vw;
+    margin: 0;
+    height: 100px;
+    background-color: #10921e;
+    padding-top: 15px;
+
+   
+}
+
+.header div {
+    display: inline-block;
+    height: inherit;
+}
+
+.navbar a {
+    display: inline-block;
+    text-align: center;
+    margin-left: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+.header-link {
+    text-decoration: none;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+}
+
+.header-link:hover {
+
+    border-radius: 10px;
+    background-color: rgba(1, 59, 40, 0.651);
+    
+}
+
+/*
+.current {
+
+    border-radius: 10px;
+    background-color: rgba(1, 59, 40, 0.651);
+    
+}
+*/
+
+
+
+.authorization {
+    display: inline-block;
+    position: relative;
+    right: 10px;
+}
+
+.authorization a {
+    display: inline-block;
+    text-align: center;
+    margin-left: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.login-link {
+    float: right;
+}
+

@@ -28,5 +28,21 @@ func main() {
 		return c.JSON(data)
 	})
 
+	app.Post("/updated", func(c *fiber.Ctx) error {
+		id, err := c.ParamsInt("id")
+
+		if err != nil {
+			return c.Status(401).SendString("Invalid id")
+		}
+
+		for i, t := range data {
+			if t.Id == id {
+				data[i].Value = t.Value
+				break
+			}
+		}
+		return c.JSON(data)
+	})
+
 	app.Listen(":4000")
 }

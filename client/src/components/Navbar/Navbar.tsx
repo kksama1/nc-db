@@ -14,8 +14,8 @@ function Navbar() {
       <div className="flex gap-2">
         <Link
           className={clsxm(
-            "rounded-lg hover:bg-green-800 px-2 py-1 active:shadow-inner transition-all flex gap-2 items-center",
-            pathname === "/" && "underline underline-offset-4"
+            "rounded-lg hover:bg-green-800 px-2 py-1 active:shadow-inner active:bg-green-900 transition-all flex gap-2 items-center",
+            pathname === "/" && "bg-green-800"
           )}
           to="/"
         >
@@ -23,8 +23,8 @@ function Navbar() {
         </Link>
         <Link
           className={clsxm(
-            "rounded-lg hover:bg-green-800 px-2 py-1 active:shadow-inner transition-all flex gap-2 items-center",
-            pathname === "/table_editor" && "underline underline-offset-4"
+            "rounded-lg hover:bg-green-800 px-2 py-1 active:shadow-inner active:bg-green-900 transition-all flex gap-2 items-center",
+            pathname === "/table_editor" && "bg-green-800"
           )}
           to="/table_editor"
         >
